@@ -1,0 +1,12 @@
+<html>
+    <script>
+        var nomes = ["Alberto", "Alex", "Sandro", "Roberta"];//criação da variavel
+
+function converterParaMaisculo(item, indice) {//criação da função
+    nomes[indice] = nomes[indice].toUpperCase();//convertendo todos os itens para maiusculo
+}
+
+nomes.forEach(converterParaMaisculo);//percorrendo e aplicando a função
+console.log(nomes);//escrevendo o resultado
+    </script>
+</html>

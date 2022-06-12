@@ -1,0 +1,25 @@
+<html>
+    <script>
+        const carros = [ //criação da variavel
+  { id: 1, modelo: 'Corsa', marca: 'Chevrolet', preco: 18000 },//carro1
+  { id: 2, modelo: 'Punto', marca: 'Fiat', preco: 12000 },//carro2
+  { id: 3, modelo: 'Gol', marca: 'Volkswagen', preco: 14000 },//carro3
+  { id: 4, modelo: 'Saveiro', marca: 'Volkswagen', preco: 20000 },//carro4
+  { id: 5, modelo: 'Uno', marca: 'Fiat', preco: 12000 }//carro5
+]
+
+let total = 0 //valor inicial
+
+for (const carro of carros) { //pegando os valores da variavel
+  total += carro.preco //pegando o preço de cada um, somando e atribuindo a variavel total
+}
+
+
+const valorFinal = Number(total).toLocaleString('pt-BR', { //convertendo o valor para valor monetário/valor em dinheiro
+  style: 'currency',
+  currency: 'BRL'
+})
+
+console.log(valorFinal) //escrevendo valor final
+    </script>
+</html>

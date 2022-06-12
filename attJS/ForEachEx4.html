@@ -1,0 +1,17 @@
+<html>
+    <script>
+        var marcas = ["Fiat", "Chevrolet", "Ford", "Volkswagen"]//criação da variavel
+var marcasIniciadasComF = [];//pegar o item da variavel que começa com f
+var novoIndice = 0;//gerar novo indice
+
+function selecionarMarcas(item, indice) {//criação da função
+    if (marcas[indice].indexOf("F") == 0) {//criar um indice só com marcas com f
+        marcasIniciadasComF[novoIndice] = marcas[indice];//gerar novo indice com marcas com f
+        novoIndice++;//gerar o indice
+    }
+}
+
+marcas.forEach(selecionarMarcas);//percorrendo a variavel
+console.log(marcasIniciadasComF);//encrevendo o resultado
+    </script>
+</html>

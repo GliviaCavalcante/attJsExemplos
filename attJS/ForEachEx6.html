@@ -1,0 +1,17 @@
+<html>
+    <script>
+        var nomes = ["Alberto", "Alex", "Sandro", "Ana Roberta"];//criação da variavel com os itens
+var tamanhoNome = 0;//criação da variavel
+var nome = "";//criação da variavel
+
+function maiorNome(item, indice) {//criação da função
+    if (nomes[indice].length > tamanhoNome) {//vai escrever o maior nome
+        nome = nomes[indice];//procurar o nome dentro da variavel
+        tamanhoNome = nomes[indice].length;//adicionar o maior nome a variavel
+    }
+}
+
+nomes.forEach(maiorNome);//percorrer atras do maior nome
+console.log(nome);//escrever o resultado
+    </script>
+</html>
